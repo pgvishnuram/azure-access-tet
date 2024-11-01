@@ -1,2 +1,8 @@
 # azure-access-tet
-sample git hub code 
+
+
+## Install required dependencies 
+
+```code
+pip install -r req.txt
+```
