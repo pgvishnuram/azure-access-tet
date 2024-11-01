@@ -41,4 +41,4 @@ def upload_blob_file(blob_service_client: BlobServiceClient, container_name: str
     with open(file=os.path.join(os.getcwd(), blob_name), mode="rb") as data:
         blob_client = container_client.upload_blob(name=blob_name, data=data, overwrite=True)
 
-upload_blob_file(blob_service_client=blob_service_client, container_name="diversitymatch", blob_name="test-blob.txt")
+upload_blob_file(blob_service_client=blob_service_client, container_name=container_name, blob_name="test-blob.txt")
